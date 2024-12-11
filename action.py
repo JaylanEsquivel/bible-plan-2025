@@ -18,7 +18,7 @@ base_url = "https://www.bible.com/pt/reading-plans/5-chronological/day/"
 def extrair_dia(dia):
     url = f"{base_url}{dia}"
     response = requests.get(url)
-    mensagem = "Leitura da Biblía plano"
+    mensagem = "Leitura da Bíblia plano"
     
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, "html.parser")
